@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<form id="myForm">
+    <label for="myInput">Enter Something:</label>
+    <input type="text" id="myInput" name="myInput">
+    <span id="myInputError" style="color: red;"></span>
+
+    <button type="button" onclick="validateForm()">Submit</button>
+</form>
+
+<script>
+    function validateForm() {
+        var userInput = $('#myInput').val();
+        var errorSpan = $('#myInputError');
+
+        if (userInput === '') {
+            errorSpan.text('This field is empty.');
+        } else {
+            errorSpan.text(''); // Clear the error message
+            // Process the form or perform any other actions
+            alert('Form submitted successfully!');
+        }
+    }
+</script>
+
+</body>
+</html>

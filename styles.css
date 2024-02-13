@@ -1,0 +1,75 @@
+.cotainer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: indianred;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+}
+
+#marksform{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    height: auto;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.smf{
+    text-align: center;
+    font-size: larger;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn btn-primary{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 20px;
+    
+}
+
+table,th,td{
+    font-size: 20px;
+    border: 1px solid;
+   
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}
